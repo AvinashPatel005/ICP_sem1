@@ -23,14 +23,13 @@ public class q5 {
             else {
                 char m;
                 if(age>=20){
-                    System.out.println("Are you married, Gita (y or n)? ");
+                    System.out.println("Are you married,"+fn+" (y or n)? ");
                     m = sc.next().toLowerCase().charAt(0);
                     if(m=='y') System.out.println(s+"Mrs. "+fn+" "+sn);
                     else System.out.println(s+"Ms. "+fn);
                 }
                 else System.out.println(s+fn+" "+sn);
             }
-
         }
         else System.out.println("Enter valid Input.");
     }
