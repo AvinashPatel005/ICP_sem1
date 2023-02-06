@@ -21,7 +21,7 @@ public class AffineChiper {
                     System.out.println("---------------------------------------------");
                     break;
                 case 2:
-                    System.out.print("Enter the Message to Decrypt: ");
+                    System.out.print("Ent1er the Message to Decrypt: ");
                     String messageToDecrypt = sc.nextLine();
                     System.out.print("Enter KEY pair (a & b): ");
                     int x = sc.nextInt();
