@@ -1,14 +1,15 @@
-package loop;
+package LabTestSample;
 
 import java.util.Scanner;
-public class guess {
+
+public class q5 {
     public static void main(String[] args) {
 
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Grade");
 
         char ch = sc.next().toLowerCase().charAt(0);
-        switch (ch){
+        switch (ch) {
             case 'a':
                 System.out.println("2000");
                 break;
@@ -18,7 +19,7 @@ public class guess {
             case 'c':
                 System.out.println("500");
                 break;
-            default :
+            default:
                 System.out.println("100");
         }
     }

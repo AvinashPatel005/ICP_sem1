@@ -13,6 +13,19 @@ public class affinecipher {
         }
         return encrypted;
     }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the Message to encrypt: ");
+        String message = sc.nextLine();
+        System.out.print("Enter KEY pair (a & b) << a is coprime with 26 >> :");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        String s = encrypt(message, a, b);
+        System.out.println("Encrypted message: " +s);
+        System.out.println("Decrypted message: " + decrypt(s, a, b));
+        sc.close();
+    }
     public static String decrypt(String ciphered,int x ,int y){
         String deciphered ="";
         int inv=0;
@@ -30,17 +43,5 @@ public class affinecipher {
             else deciphered += ch;
         }
         return deciphered;
-    }
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the Message to encrypt: ");
-        String message = sc.nextLine();
-        System.out.print("Enter KEY pair (a & b) << a is coprime with 26 >> :");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        String s = encrypt(message, a, b);
-        System.out.println("Encrypted message: " +s);
-        System.out.println("Decrypted message: " + decrypt(s, a, b));
-        sc.close();
     }
 }
